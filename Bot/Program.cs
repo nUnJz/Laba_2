@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Laba_2_1
+namespace Bot
 {
     class Student
     {
@@ -36,14 +36,14 @@ namespace Laba_2_1
             }
 
             List<Student> filteredStudents = students.FindAll(s => s.Mark >= 20);
-
+            //students.Sort((x, y) => x.Mark.CompareTo(y.Mark));
             Console.WriteLine("Відфільтрований перелік:");
             Console.WriteLine();
-
             foreach (Student student in filteredStudents)
             {
                 Console.WriteLine(student.Surname + " " + student.Mark);
             }
+            //Console.WriteLine(String.Join(Environment.NewLine, students)); 
 
             Console.ReadLine();
         }
