@@ -19,14 +19,12 @@ namespace Laba_2_4
                 "А матері вечерять ждуть."
             };
 
-            // Create a delegate that takes a string and returns its length
             StringLengthDelegate stringLength = s => s.Length;
 
             string s1 = "Шевченко";
             Console.WriteLine($"Рядок'{s1}' довжина: {s1.Length}");
             Console.WriteLine();
 
-            // Use the delegate to process the list of strings
             foreach (string s in strings)
             {
                 int length = stringLength(s);
