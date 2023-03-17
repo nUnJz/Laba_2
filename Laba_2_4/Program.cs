@@ -10,7 +10,7 @@ namespace Laba_2_4
         {
             Console.OutputEncoding = System.Text.Encoding.Default;
 
-            List<string> strings = new List<string> 
+            List<string> strings = new List<string>
             {
                 "Садок вишневий коло хати,",
                 "Хрущі над вишнями гудуть,",
